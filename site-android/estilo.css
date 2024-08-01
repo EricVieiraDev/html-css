@@ -62,9 +62,10 @@ main {
 }
 
 main h1 {
-    font-family: var(--font-destaque);
+    font-family: var(--font-android);
     margin-top: 0px;
     color: var(--cor4);
+    font-weight: bold;
 }
 
 main p {
@@ -73,10 +74,11 @@ main p {
 }
 
 main h2 {
-    font-family: var(--font-destaque);
+    font-family: var(--font-android);
     color: var(--cor4);
     background: linear-gradient(to right, var(--cor1), transparent);
     padding-left: 10px;
+    font-weight: bold;
 }
 
 main img {
