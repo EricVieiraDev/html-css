@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="'width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <link rel="stylesheet" href="estilo.css" />
+    </head>
+    <body>
+        <div class="box">
+            <form action="">
+                <fieldset>
+                    <legend><b>Formulário de DEVs</b></legend>
+                    <br>
+                    <!--Informações pessoais-->
+                    <div class="inputbox">
+                        <input type="text" name="nome" id="nome" class="inputUser" required>
+                        <label for="nome" class="labelInput">Nome Completo</label>
+                    </div>
+                    <br><br>
+                    <div class="inputbox">
+                        <input type="text" name="email" id="email" class="inputUser" required>
+                        <label for="email" class="labelInput">Email</label>
+                    </div>
+                    <br><br>
+                    <div class="inputbox">
+                        <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                        <label for="telefone" class="labelInput">Telefone</label>
+                    <!--Informações sobre o trabalho-->    
+                        <p>Qual linguagem você utiliza:</p>
+                        <input type="checkbox" id="java" name="linguagem" value="java">
+                        <label for="java">Java</label>
+                        <input type="checkbox" id="javascript" name="linguagem" value="javascript" >
+                        <label for="javascript">JavaScript</label>
+                        <br>
+                        <input type="checkbox" id="python" name="linguagem" value="python" >
+                        <label for="python">Python</label>
+                        <input type="checkbox" id="html" name="linguagem" value="html" >
+                        <label for="html">HTML</label>
+                        <br>
+                        <input type="checkbox" id="css" name="linguagem" value="css" >
+                        <label for="css">CSS</label>
+                        <input type="checkbox" id="c#" name="linguagem" value="c#" >
+                        <label for="c#">C#</label>
+                        <br>
+                        <div class="inputbox">
+                            <p><b>Você é desenvolvedor</b></p>
+                            <input type="radio" name="experiencia" id="frontend" >
+                            <label for="frontend">Front-end</label>
+                            <input type="radio" name="experiencia" id="backend" >
+                            <label for="backend">Back-end</label>
+                            <input type="radio" name="experiencia" id="fullstack" >
+                            <label for="fullstack">Full-stack</label>
+                            <br><br>
+                            <!--Informações cidade e estado-->
+                            <div class="inputbox">
+                                <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                                <label for="cidade" class="labelInput">Cidade</label>
+                            </div>
+                            <br><br>
+                            <div class="inputbox">
+                                <input type="text" name="estado" id="estado" class="inputUser" required>
+                                <label for="estado" class="labelInput">Estado</label>
+                            </div>
+                            <br><br>
+                            <input type="submit" name="submit" id="submit">
+                </fieldset>
+            </form>
+        </div>     
+    </body>
+</html>
