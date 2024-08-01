@@ -62,7 +62,7 @@ main {
 }
 
 main h1 {
-    font-family: var(--font-android);
+    font-family: var(--font-destaque);
     margin-top: 0px;
     color: var(--cor4);
 }
@@ -73,7 +73,7 @@ main p {
 }
 
 main h2 {
-    font-family: var(--font-android);
+    font-family: var(--font-destaque);
     color: var(--cor4);
     background: linear-gradient(to right, var(--cor1), transparent);
     padding-left: 10px;
