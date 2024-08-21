@@ -6,8 +6,8 @@ body {
 }
 
 .main {
-    width: 98.8.1vw;
-    height: 47.6.2vw;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
