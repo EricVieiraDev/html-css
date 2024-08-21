@@ -109,6 +109,11 @@ body {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+}
 
 
 
