@@ -110,8 +110,16 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    
     .main {
         flex-direction: column;
+    }
+    
+    img {
+        width: 100%;
     }
 }
 
