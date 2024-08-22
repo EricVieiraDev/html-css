@@ -1,4 +1,10 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    
+}
 
 :root {
     --cor1:#4A5D23;
@@ -10,18 +16,19 @@
 
 body {
     font-family: "Poppins", sans-serif ;
-    margin: 0 20px;
     background-color: var(--cor4);
-    height: 100%;
+    margin: 0;
     padding: 0;
-    align-items: center;
+    box-sizing: border-box;
 }
 
 header {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+ 
 }
 
 #nome-site {
@@ -34,9 +41,14 @@ header {
 }
 
 .left-menu {
-    margin-left: 50px;
     color: white;
     font-weight: normal;
+    flex: 1;
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
 }
 
 .menu-itens {
@@ -53,7 +65,9 @@ header {
 
 main {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 h2 {
@@ -62,12 +76,17 @@ h2 {
     color: var(--cor3);
 }
 
-#h2principal {
-    margin-top: 100px;
+.h2principal {
+    margin-top: 50px;
 }
 
 #h2sucundario {
     color: white;
+}
+
+aside {
+    flex: 1;
+    max-width: 50%;
 }
 
 aside > p {
@@ -94,11 +113,17 @@ button {
     margin-top: 10px;
 }
 
-.imagem {
+article {
+    flex: 1;
     display: flex;
-    width: 600px;
+    justify-content: flex-end;
+}
+
+article > img{
+    max-width: 100%;
     height: auto;
 }
+
 
 @media screen and (max-width: 760px) {
     body {
@@ -106,8 +131,8 @@ button {
         text-align: center;
     }
 
-    #h2principal , #h2sucundario {
-        font-size: 35px;
+    .h2principal , #h2sucundario , .h2agora {
+        font-size: 20px;
     }
 
     header {
@@ -138,4 +163,3 @@ button {
         display: none;
     }
 }
-
