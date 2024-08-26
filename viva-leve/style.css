@@ -92,6 +92,8 @@ aside {
 aside > p {
     color: white;
     font-weight: 600;
+    text-align: justify;
+    width: 500px;
 }
 
 .dados {
@@ -115,7 +117,7 @@ button {
 
 article {
     flex: 1;
-    display: flex;
+    display: inline-block;
     justify-content: flex-end;
 }
 
@@ -146,9 +148,18 @@ article > img{
         padding: 10px;
     }
 
+    .dados {
+        width: 100%;
+    }
+
+    button {
+        width: 80%;
+    }
+
     aside > p {
          font-size: 12px;
          font-weight: normal;
+         width: 250px;
     }
 
     main {
