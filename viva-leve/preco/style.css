@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #c7dad371;
+}
+
+.container {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #c7dad371;
+}
+
+.cabecalho {
+    background: linear-gradient(to right, #A57F60, #6B8E23);
+}
+
+#titulo {
+    padding-top: 20px;
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 0px 0px 14px rgba(255, 255, 255, 0.466);
+}
+
+#sub-titulo {
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    margin: 0px 20px;
+    padding: 10px 0 30px;
+}
+
+.sobre-preco {
+    color: white;
+    background: linear-gradient(to right, #A57F60, #6B8E23);
+}
+
+#t-preco {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#p-preco {
+    padding: 0 20px 20px;
+    margin-bottom: 0;
+}
+
+.tabelasp {
+    width: 25%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.397);
+}
+
+header {
+    background-color: #B39DDB;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header > h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+header > p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.seg-plano , .seg-botao {
+    background-color: #8A9A5B;
+}
+
+main {
+    text-align: center;
+    background-color: white;
+    padding:15px 13px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#preco {
+    font-family: 'Roboto' , sans-serif;
+    padding-top: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 50px;
+}
+
+main > p > sup {
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+#aula {
+    margin-top: 0;
+}
+
+.acessos {
+    display: flex;
+    position: relative;
+    margin-left: 25%;
+    text-align: justify;
+    font-weight: 500;
+    padding-bottom: 15px;
+    font-size: 13px;
+}
+
+.acessos::before {
+    content: '✓';
+    font-size: 17px;
+    color: #B39DDB;
+    margin-left: 2px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    font-weight: bolder;
+}
+
+#ace1, #ace2, #ace3 {
+    display: flex;
+    position: relative;
+}
+
+#ace1::before {
+    content: '✓';
+    font-size: 17px;
+    color: #8A9A5B;
+    margin-left: 2px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    font-weight: bolder;
+}
+
+#ace2::before {
+    content: '✓';
+    font-size: 17px;
+    color: #8A9A5B;
+    margin-left: 2px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    font-weight: bolder;
+}
+
+#ace3::before {
+    content: '✓';
+    font-size: 17px;
+    color: #8A9A5B;
+    margin-left: 2px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    font-weight: bolder;
+}
+
+button {
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
+    border: none;
+    background-color: #B39DDB;
+    padding: 15px 40px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #846ab3;
+}
+
+.seg-botao:hover {
+    background-color: #63703b;
+}
+
+#rodape {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.37);
+}
