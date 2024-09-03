@@ -12,12 +12,13 @@
     --cor3:#6B8E23;
     --cor4:#2E2E2E;
     --cor5:#D3D3D3;
+    --cor6:#888080;
 }
 
 body {
     font-family:"Poppins", sans-serif;;
     font-weight: normal;
-    background: linear-gradient(to right, var(--cor1), var(--cor2));
+    background: linear-gradient(45deg, var(--cor1), var(--cor2));
     height: 100vh;
     display: flex;
     justify-content: center;
