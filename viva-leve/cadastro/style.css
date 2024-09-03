@@ -36,18 +36,25 @@ main {
     text-align: center;
 }
 
+.container > h1 {
+    color: var(--cor1);
+    font-weight: 700;
+}
+
 .container > h4 {
     text-align: left;
     padding-left: 10px;
     margin-bottom: 0;
     font-weight: 600;
+    color: var(--cor1);
 }
 
 .container > input {
     width: 95%;
-    border: 1px solid black;
+    border: 2px solid var(--cor1);
     border-radius: 10px;
     padding: 10px;
+    outline: none;
 }
 
 .container > button {
@@ -56,8 +63,37 @@ main {
     border: none;
     border-radius: 10px;
     color: white;
-    background: linear-gradient(to right, var(--cor1) , var(--cor2));
+    background: linear-gradient(45deg, var(--cor1) , var(--cor2));
     width: 95%;
     font-weight: bolder;
     font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
+
+.container > button:hover {
+    background: linear-gradient(45deg, #3e4e1c , #6f9760);
+}
+
+@media screen and (max-width: 760px) {
+    
+    body {
+        overflow: hidden;
+    }
+    
+    main {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px), screen and (max-width:884px) {
+    
+    body {
+        overflow: hidden;
+    }
+    
+    main {
+        width: 90%;
+    }
+}
+
