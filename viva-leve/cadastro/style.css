@@ -13,20 +13,25 @@
     --cor4:#2E2E2E;
     --cor5:#D3D3D3;
     --cor6:#888080;
+    --cor7:#2b3615;
 }
 
 body {
     font-family:"Poppins", sans-serif;;
     font-weight: normal;
-    background: linear-gradient(45deg, var(--cor1), var(--cor2));
-    height: 100vh;
+    background-image: url(imagens/fundo3.jpeg);
+    height: 97vh;
+    background-image: url(imagens/fundo3.jpeg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 main {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.342);
     border-radius: 15px;
     width: 30%;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.404);
@@ -39,15 +44,16 @@ main {
 
 .container > h1 {
     color: var(--cor1);
-    font-weight: 700;
+    font-weight: bolder;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
 .container > h4 {
     text-align: left;
     padding-left: 10px;
     margin-bottom: 0;
-    font-weight: 600;
-    color: var(--cor1);
+    font-weight: bolder;
+    color: var(--cor7);
 }
 
 .container > input {
