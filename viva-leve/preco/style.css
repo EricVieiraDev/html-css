@@ -7,51 +7,82 @@
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
-    background-color: #c7dad371;
+    background-color: #cddfd4;
 }
 
 .container {
     margin-top: 0;
     display: flex;
     justify-content: center;
-    background-color: #c7dad371;
+    background-color:  #cddfd4;
 }
 
 .cabecalho {
-    background: linear-gradient(to right, #A57F60, #6B8E23);
+    background-image: url(imagens/naturezap2.jpg);
+    background-size: cover;
+    background-position: center bottom;
 }
 
 #titulo {
     padding-top: 20px;
     margin-top: 0;
+    margin-bottom: 0;
     color: white;
     text-align: center;
     font-size: 45px;
-    text-shadow: 0px 0px 14px rgba(255, 255, 255, 0.466);
+    text-shadow: 0px 0px 14px rgba(255, 255, 255, 0.267);
 }
 
 #sub-titulo {
     color: rgb(255, 255, 255);
-    text-align: justify;
+    text-align: center;
     margin: 0px 20px;
     padding: 10px 0 30px;
+    font-size: 20px;
 }
 
-.sobre-preco {
-    color: white;
-    background: linear-gradient(to right, #A57F60, #6B8E23);
+.massagens {
+    margin-left: 20px;
+    font-weight: 600;
 }
 
-#t-preco {
-    padding-top: 20px;
-    text-align: center;
+.massagens > p {
+    font-weight: normal;
+    border-bottom: 1px solid black;
+    border-width: 100%;
 }
 
-#p-preco {
-    padding: 0 20px 20px;
-    margin-bottom: 0;
+.massagens > p > sup {
+    font-size: 10px;
+    margin-left: 10px;
+    background-color: rgba(201, 156, 184, 0.336);
+    align-items: center;
+    font-weight: 300;
 }
 
+.pre-mas {
+    margin-left: 8em;
+    display: block;
+    align-items: center;
+}
+
+.pre-mas > p {
+    border-bottom: 1px solid black;
+}
+
+.prices {
+    margin: 10px;
+    display: flex;
+    padding: 15px;
+}
+
+.tabela {
+    justify-content: center;
+}
+.doubletab {
+    display: flex;
+    justify-content: center;
+}
 .tabelasp {
     width: 25%;
     display: block;
@@ -198,11 +229,30 @@ button:hover {
     padding: 0 30px;
 }
 
-img {
-    width: 100%;
+.main-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem {
+    width: 80%;
     height: 300px;
-    margin-top: 30px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.37);
+    overflow: hidden;
+}
+
+.plans-prec {
+    text-align: center;
+}
+
+.plans-prec > h5 {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.plans-prec > h1 {
+    font-weight: normal;
+    margin-top: 0;
 }
 
 @media screen and (max-width: 760px) {
