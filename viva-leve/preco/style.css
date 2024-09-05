@@ -1,34 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+:root {
+    --cor1:#ACC8DE;
+    --cor2:#525C66;
+    --cor3:#778796;
+    --cor4:#BE9A8E;
+    --cor5:#3B3633;
+}
 
 body {
     margin: 0;
-    font-family: "Poppins", sans-serif;
-    background-color: #cddfd4;
+    font-family: "Quicksand", sans-serif;
+    background-color: white;
 }
 
 .container {
     margin-top: 0;
     display: flex;
     justify-content: center;
-    background-color:  #cddfd4;
+    background-color:  white;
 }
 
 .cabecalho {
-    background-image: url(imagens/naturezap2.jpg);
+    background-image: url(imagens/principal.jpeg);
     background-size: cover;
     background-position: center bottom;
+    height: 300px;
 }
 
 #titulo {
-    padding-top: 20px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
     margin-top: 0;
+    padding-top: 6%;
     margin-bottom: 0;
     color: white;
-    text-align: center;
     font-size: 45px;
     text-shadow: 0px 0px 14px rgba(255, 255, 255, 0.267);
 }
@@ -48,8 +55,9 @@ body {
 
 .massagens > p {
     font-weight: normal;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--cor4);
     border-width: 100%;
+    color: var(--cor2);
 }
 
 .massagens > p > sup {
@@ -60,6 +68,11 @@ body {
     font-weight: 300;
 }
 
+.massagens > h3 {
+    font-weight: 700;
+    color: var(--cor5);
+}
+
 .pre-mas {
     margin-left: 8em;
     display: block;
@@ -67,7 +80,8 @@ body {
 }
 
 .pre-mas > p {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--cor4);
+    color: var(--cor2);
 }
 
 .prices {
@@ -239,20 +253,59 @@ button:hover {
     width: 80%;
     height: 300px;
     overflow: hidden;
+    margin-top: 30px;
 }
 
 .plans-prec {
+    font-size: 20px;
     text-align: center;
+    color: var(--cor2);
 }
 
 .plans-prec > h5 {
-    margin-bottom: 0;
-    font-weight: normal;
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 25px;
 }
 
 .plans-prec > h1 {
-    font-weight: normal;
-    margin-top: 0;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+footer {
+    margin-top: 10%;
+    height: 30vh;
+    background: linear-gradient(90deg, #4A7C59, #355C7D, #6C5B7B);
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape > label > img {
+    padding-top: 40%;
+}
+
+footer > p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 0px;
+    color: white;
+}
+
+#p-rodape {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#eric {
+    margin-top: 5px;
+    color: #cfcccc6e;
 }
 
 @media screen and (max-width: 760px) {
