@@ -90,14 +90,7 @@ body {
     font-size: 10px;
 }
 
-#pre-1,
-#pre-2,
-#pre-3,
-#pre-4,
-#pre-5,
-#pre-6,
-#pre-7,
-#pre-8 {
+#pre-1, #pre-2, #pre-3, #pre-4, #pre-5, #pre-6, #pre-7, #pre-8 {
     text-align: right;
 }
 
@@ -112,7 +105,7 @@ body {
 }
 
 header {
-    background-color: #B39DDB;
+    background-color: #FFDAB9;
     padding: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -132,9 +125,8 @@ header>p {
     margin-top: 5px;
 }
 
-.seg-plano,
-.seg-botao {
-    background-color: #8A9A5B;
+.seg-plano, .seg-botao {
+    background-color: #F4C2C2;
 }
 
 main {
@@ -175,7 +167,7 @@ main>p>sup {
 .acessos::before {
     content: '✓';
     font-size: 17px;
-    color: #B39DDB;
+    color: #FFDAB9;
     margin-left: 2px;
     position: absolute;
     top: 0;
@@ -183,9 +175,7 @@ main>p>sup {
     font-weight: bolder;
 }
 
-#ace1,
-#ace2,
-#ace3 {
+#ace1, #ace2, #ace3 {
     display: flex;
     position: relative;
 }
@@ -193,7 +183,7 @@ main>p>sup {
 #ace1::before {
     content: '✓';
     font-size: 17px;
-    color: #8A9A5B;
+    color: #F4C2C2;
     margin-left: 2px;
     position: absolute;
     top: 0;
@@ -204,7 +194,7 @@ main>p>sup {
 #ace2::before {
     content: '✓';
     font-size: 17px;
-    color: #8A9A5B;
+    color: #F4C2C2;
     margin-left: 2px;
     position: absolute;
     top: 0;
@@ -215,7 +205,7 @@ main>p>sup {
 #ace3::before {
     content: '✓';
     font-size: 17px;
-    color: #8A9A5B;
+    color: #F4C2C2;
     margin-left: 2px;
     position: absolute;
     top: 0;
@@ -228,17 +218,17 @@ button {
     font-weight: bolder;
     font-size: 17px;
     border: none;
-    background-color: #B39DDB;
+    background-color: #FFDAB9;
     padding: 15px 40px;
     border-radius: 10px;
 }
 
 button:hover {
-    background-color: #846ab3;
+    background-color: #dbab82;
 }
 
 .seg-botao:hover {
-    background-color: #63703b;
+    background-color: #ce9494;
 }
 
 #rodape {
@@ -273,6 +263,7 @@ button:hover {
     margin-top: 0;
     font-weight: 600;
     font-size: 25px;
+    color: var(--cor4);
 }
 
 .plans-prec>h1 {
@@ -284,7 +275,7 @@ button:hover {
 footer {
     margin-top: 10%;
     height: 30vh;
-    background: linear-gradient(90deg, #4A7C59, #355C7D, #6C5B7B);
+    background: linear-gradient(to right ,#A0522D, #D2B48C, #e9cfa0);
 }
 
 .rodape {
