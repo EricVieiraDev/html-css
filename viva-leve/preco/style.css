@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 :root {
-    --cor1:#ACC8DE;
-    --cor2:#525C66;
-    --cor3:#778796;
-    --cor4:#BE9A8E;
-    --cor5:#3B3633;
+    --cor1: #ACC8DE;
+    --cor2: #525C66;
+    --cor3: #778796;
+    --cor4: #BE9A8E;
+    --cor5: #3B3633;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
     margin-top: 0;
     display: flex;
     justify-content: center;
-    background-color:  white;
+    background-color: white;
 }
 
 .cabecalho {
@@ -48,55 +48,59 @@ body {
     font-size: 20px;
 }
 
-.massagens {
-    margin-left: 20px;
-    font-weight: 600;
+.tabelas-container {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
-.massagens > p {
-    font-weight: normal;
+.tabela-preco {
+    background-image: url(imagens/galhos.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-collapse: collapse;
+    width: 25%;
+    border: none;
+}
+
+.tabela-preco th, .tabela-preco td {
+    font-size: 14px;
+    padding: 8px;
+    text-align: left;
+    border: none;
     border-bottom: 1px solid var(--cor4);
-    border-width: 100%;
-    color: var(--cor2);
 }
 
-.massagens > p > sup {
-    font-size: 10px;
-    margin-left: 10px;
-    background-color: rgba(201, 156, 184, 0.336);
-    align-items: center;
+.tabela-preco th {
+    border: none;
+    color: black;
+    font-size: 17px;
+}
+
+.tabela-preco td {
+    color: black;
     font-weight: 300;
 }
 
-.massagens > h3 {
-    font-weight: 700;
-    color: var(--cor5);
+.tabela-preco td>sup {
+    background-color: #be9a8e54;
+    font-size: 10px;
 }
 
-.pre-mas {
-    margin-left: 8em;
-    display: block;
-    align-items: center;
+#pre-1,
+#pre-2,
+#pre-3,
+#pre-4,
+#pre-5,
+#pre-6,
+#pre-7,
+#pre-8 {
+    text-align: right;
 }
 
-.pre-mas > p {
-    border-bottom: 1px solid var(--cor4);
-    color: var(--cor2);
-}
-
-.prices {
-    margin: 10px;
-    display: flex;
-    padding: 15px;
-}
-
-.tabela {
-    justify-content: center;
-}
-.doubletab {
-    display: flex;
-    justify-content: center;
-}
 .tabelasp {
     width: 25%;
     display: block;
@@ -114,41 +118,42 @@ header {
     border-top-right-radius: 10px;
 }
 
-header > h1 {
+header>h1 {
     color: white;
     text-align: center;
     margin-bottom: 0;
     font-size: 40px;
 }
 
-header > p {
+header>p {
     color: white;
     text-align: center;
     font-size: 15px;
     margin-top: 5px;
 }
 
-.seg-plano , .seg-botao {
+.seg-plano,
+.seg-botao {
     background-color: #8A9A5B;
 }
 
 main {
     text-align: center;
     background-color: white;
-    padding:15px 13px 20px;
+    padding: 15px 13px 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 #preco {
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding-top: 10px;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 50px;
 }
 
-main > p > sup {
+main>p>sup {
     font-size: 17px;
     font-weight: bolder;
 }
@@ -178,7 +183,9 @@ main > p > sup {
     font-weight: bolder;
 }
 
-#ace1, #ace2, #ace3 {
+#ace1,
+#ace2,
+#ace3 {
     display: flex;
     position: relative;
 }
@@ -262,13 +269,13 @@ button:hover {
     color: var(--cor2);
 }
 
-.plans-prec > h5 {
+.plans-prec>h5 {
     margin-top: 0;
     font-weight: 600;
     font-size: 25px;
 }
 
-.plans-prec > h1 {
+.plans-prec>h1 {
     font-family: "Playfair Display", serif;
     font-weight: 600;
     margin-bottom: 0;
@@ -285,11 +292,11 @@ footer {
     justify-content: center;
 }
 
-.rodape > label > img {
+.rodape>label>img {
     padding-top: 40%;
 }
 
-footer > p {
+footer>p {
     font-family: "Quicksand", sans-serif;
     font-weight: bolder;
     font-size: 13px;
@@ -319,7 +326,8 @@ footer > p {
     }
 }
 
-@media screen and (max-width: 768px), screen and (max-width:884px) {
+@media screen and (max-width: 768px),
+screen and (max-width:884px) {
     .container {
         display: block;
     }
