@@ -4,50 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viva Leve</title>
+    <title>Inicial</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <link rel="icon" type="image/png" href="imagens/logo.png">
 </head>
 
 <body>
-    <header class="left-menu">
-        <h1 id="nome-site">Viva Leve</h1>
-        <div class="right-menu">
-            <nav>
-                <a href="inicio/index.html" class="menu-itens">Início</a>
-                <a href="preco/index.html" class="menu-itens">Preços</a>
-                <a href="contato/index.html" class="menu-itens">Contato</a>
-                <a href="cadastro/index.html" class="menu-itens" id="conta">Não tenho cadastro!</a>
-            </nav>
-        </div>
+    <header>
+        <div class="logo">Viva Leve</div>
+        <nav>
+            <ul>
+                <li><a href="inicio/index.html">Blog</a></li>
+                <li><a href="preco/index.html">Preços</a></li>
+                <li><a href="contato/index.html">Contatos</a></li>
+                <li><a href="contato/index.html">Sobre</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <aside>
-            <h2 class="h2principal">Seja Bem-Vindo à</h2>
-            <h2 id="h2sucundario">Viva Leve</h2>
-            <p>Descubra a serenidade que habita em seu interior.
-                A cada respiração, permita-se desapegar do que não serve mais.
-                Encontre equilíbrio na quietude e clareza na mente.
-                Deixe que a meditação guie seu caminho para o bem-estar.
-            </p>
-            <div>
-                <input type="email" name="nome" placeholder="Nome" class="dados">
+    <div class="container">
+        <main>
+            <h1>Viva Leve</h1>
+            <div class="texto">
+                <p>Descubra a serenidade que habita em seu interior. A cada respiração, permita-se desapegar do que não
+                    serve mais. Encontre equilíbrio na quietude e clareza na mente. Deixe que a meditação guie seu
+                    caminho para o bem-estar.</p>
             </div>
-            <div>
-                <input type="password" name="senha" placeholder="Senha" class="dados">
+            <div class="texto-celular">
+                <p>Descubra a serenidade que habita em seu interior. A cada respiração, permita-se desapegar do que não
+                    serve mais.</p>
             </div>
-            <button>Entrar</button>
-        </aside>
 
-        <article>
-            <a href="https://storyset.com/education" target="_blank">
-                <img src="imagens/meditation-animate.svg" alt="homem meditando">
-            </a>
-        </article>
-
-
-    </main>
-
+            <button id="login">Login</button>
+            <a href="cadastro/index.html"><button id="sign-up">Sign Up</button></a>
+        </main>
+    </div>
 </body>
 
 </html>
