@@ -306,6 +306,14 @@ footer>p {
     color: #cfcccc;
 }
 
+.img-celular {
+    display: none;
+}
+
+.img-tablet {
+    display: none;
+}
+
 @media screen and (max-width: 760px) {
     #titulo {
         padding-top: 23%;
@@ -319,6 +327,14 @@ footer>p {
     .tabelasp {
         width: 90%;
         height: auto;
+    }
+
+    .imagem {
+        display: none;
+    }
+
+    .img-celular {
+        display: flex;
     }
 }
 
@@ -338,5 +354,17 @@ footer>p {
 
     .rodape>label>img {
         padding-top: 80%;
+    }
+
+    .img-celular {
+        display: none;
+    }
+
+    .imagem {
+        display: none;
+    }
+
+    .img-tablet {
+        display: block;
     }
 }
