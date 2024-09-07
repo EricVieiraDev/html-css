@@ -82,7 +82,7 @@ body {
 
 .tabela-preco td {
     color: black;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .tabela-preco td>sup {
@@ -307,8 +307,13 @@ footer>p {
 }
 
 @media screen and (max-width: 760px) {
+    #titulo {
+        padding-top: 23%;
+    }
+    
     .container {
         display: block;
+        margin-right: 20px;
     }
 
     .tabelasp {
@@ -317,13 +322,21 @@ footer>p {
     }
 }
 
-@media screen and (max-width: 768px),
-screen and (max-width:884px) {
+@media screen and (max-width: 768px), screen and (max-width:884px) {
+    #titulo {
+        padding-top: 12%;
+    }
+    
     .container {
         display: block;
+        margin-left: 14%;
     }
 
     .tabelasp {
-        width: 95%;
+        width: 80%;
+    }
+
+    .rodape>label>img {
+        padding-top: 80%;
     }
 }
