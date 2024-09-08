@@ -62,7 +62,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     border-collapse: collapse;
-    width: 25%;
+    width: 30%;
+    height: 37vh;
     border: none;
 }
 
@@ -314,19 +315,9 @@ footer>p {
     display: none;
 }
 
-@media screen and (max-width: 760px) {
+@media (max-width: 450px) {
     #titulo {
-        padding-top: 23%;
-    }
-    
-    .container {
-        display: block;
-        margin-right: 20px;
-    }
-
-    .tabelasp {
-        width: 90%;
-        height: auto;
+        padding-top: 22.5%;
     }
 
     .imagem {
@@ -335,29 +326,43 @@ footer>p {
 
     .img-celular {
         display: flex;
+        width: 330px;
     }
-}
 
-@media screen and (max-width: 768px), screen and (max-width:884px) {
-    #titulo {
-        padding-top: 12%;
-    }
-    
     .container {
         display: block;
-        margin-left: 14%;
     }
 
     .tabelasp {
-        width: 80%;
+        width: 90%;
     }
 
-    .rodape>label>img {
-        padding-top: 80%;
+    .tabelas-container {
+        gap: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #titulo {
+        padding-top: 11.5%;
+        font-size: 40pt;
     }
 
-    .img-celular {
-        display: none;
+    .tabelas-container {
+        gap: 45px;
+    }
+
+    .tabela-preco {
+        width: 40%;
+        height: 25vh;
+    }
+
+    .tabela-preco th {
+        font-size: 21px;
+    }
+
+    .tabela-preco td {
+        font-size: 18px;
     }
 
     .imagem {
@@ -365,8 +370,52 @@ footer>p {
     }
 
     .img-tablet {
-        display: block;
-        width: 80%;
-        margin-left: 10%;
+        display: flex;
+        margin-top: 5%;
+    }
+
+    .plans-prec {
+        font-size: 16pt;
+    }
+
+    .tabelasp {
+        width: 45%;
+    }
+
+    .rodape > label > img {
+        padding-top: 90%;
     }
 }
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+    .cabecalho {
+        height: 200px;
+    }
+       
+    #titulo {
+        padding-top: 6%;
+    }
+
+    .tabela-preco {
+        width: 35%;
+        height: 35vh;
+    }
+
+    .imagem {
+        display: none;
+    }
+
+    .img-tablet {
+        display: flex;
+        width: 600px;
+    }
+
+    .tabelasp {
+        width: 50%;
+    }
+
+    footer {
+        height: 40vh;
+    }
+}
+
