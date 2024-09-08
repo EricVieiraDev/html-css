@@ -125,139 +125,130 @@ button:hover {
     border: 1px solid rgb(182, 182, 182);
 }
 
-@media screen and (max-width: 414px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
+@media (max-width: 450px) {
     .logo {
         margin-left: 0;
-    }
-
-    nav>ul {
-        margin-right: 0;
-        gap: 10px
     }
 
     header {
         margin: 0;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-
-    .container {
-        margin-left: 0;
-        margin-right: 0;
-        width: 80%;
-    }
-
-    main {
-        padding: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    main>h1 {
-        margin-bottom: 20px;
-        font-size: 45px;
-        margin-right: 9%;
-    }
-
-    .texto {
-        display: none;
-    }
-
-    .texto-celular {
-        display: flex;
-        color: rgba(255, 255, 255, 0.750);
-        text-align: left;
-        margin-bottom: 30px;
-        font-size: 13.5px;
-        margin-right: 40px;
-        text-align: center;
-    }
-
-    button {
-        margin-top: 10px;
-        width: 20%;
-        margin-right: 0;
-        margin-left: -15px;
-    }
-
-    #sign-up {
-        margin: 0;
-        padding: 20px 10px;
-        width: 15%;
-    }
-}
-
-
-@media screen and (max-width: 926px) {
-    .container {
-        margin-top: 0;
-        align-items: center;
-    }
-
-    main {
-        padding: 0;
-        margin-top: 0;
-    }
-
-    main > h1 {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    .texto > p {
-        margin-bottom: 35px;
-
-    }
-
-    .logo {
-        margin-left: 0;
+        padding: 15px 10px 0;
     }
 
     nav > ul {
-        margin-right: 0;
-        gap: 20px;
-    }
-
-    header {
-        display: flex;
-        justify-content: space-between;
+        gap: 12px;
         margin: 0;
-        padding: 20px;
     }
-}
 
-@media screen and (max-width:844px) {
     .container {
-        margin-right: 15%;
-        margin-left: 13%;
-        margin-top: 17vh;
+        margin: 0 25px;
     }
 
-    #sign-up {
-        width: 45%;
-        margin-left: 10px;
+    main {
+        padding: 0;
+        margin-top: 25vh;
+
     }
 
     main > h1 {
-        font-size: 50px;
+        font-size: 33pt;
     }
 
-    .texto > p {
+    .texto {
+        display: flex;
+        text-align: justify;
+        font-size: 11pt;
+        margin-bottom: 10%;
+    }
+
+    button, #sign-up {
+        padding: 15px;
+        width: 40%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .logo {
+        margin: 0;
         font-size: 20px;
     }
 
-    button {
-        width: 40%;
-        padding: 17px 0;
-        font-size: 13px;
+    header {
+        gap: 20px;
+        margin: 20px 25px 0 25px;
+        padding: 0;
     }
 
-    #sign-up {
-        padding: 16px 0;
+    nav > ul {
+        margin: 0;
+    }
+
+    nav > ul > li > a{
+        font-size: 18px;
+    }
+
+    .container {
+        margin: 0 50px;
+    }
+
+    main {
+        padding: 0;
+        margin-top: 25vh;
+    }
+
+    main > h1 {
+        font-size: 60pt;
+    }
+
+    .texto {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    button {
+        padding: 25px;
+        font-size: 15pt;
+    }
+}
+
+@media(orientation: landscape) {
+    .logo {
+        margin-left: 0;
+    }
+
+    header {
+        margin: 0;
+        padding: 15px 15px 0;
+    }
+
+    nav > ul {
+        gap: 25px;
+        margin: 0;
+    }
+
+    .container {
+        margin: 0 100px;
+    }
+
+    main {
+        padding: 0;
+        margin-top: 15vh;
+
+    }
+
+    main > h1 {
+        font-size: 30pt;
+    }
+
+    .texto {
+        display: flex;
+        text-align: justify;
+        font-size: 10pt;
+        margin-bottom: 10%;
+    }
+
+    button, #sign-up {
+        padding: 13px;
+        width: 32%;
     }
 }
