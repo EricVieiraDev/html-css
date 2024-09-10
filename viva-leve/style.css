@@ -102,6 +102,7 @@ button {
     width: 40%;
     font-weight: bolder;
     font-size: 16px;
+    cursor: pointer;
 }
 
 button:hover {
@@ -114,6 +115,7 @@ button:hover {
     color: rgba(255, 255, 255, 0.836);
     margin-left: 3%;
     width: 40%;
+    cursor: pointer;
 }
 
 #sign-up > a {
