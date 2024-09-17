@@ -23,7 +23,7 @@ body {
 }
 
 .cabecalho {
-    background-image: url(imagens/principal.jpeg);
+    background-image: url('imagens/principal.jpeg');
     background-size: cover;
     background-position: center bottom;
     height: 300px;
@@ -57,7 +57,7 @@ body {
 }
 
 .tabela-preco {
-    background-image: url(imagens/galhos.png);
+    background-image: url('imagens/galhos.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
