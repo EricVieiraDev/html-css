@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="imagens/logo.png">
 </head>
+
 <body>
+    <div class="flor">
+        <img src="imagens/logo-site-white.png" alt="flor-azul" class="logo-flor">
+    </div>
+    <h2>BUSQUE A CONEXÃO!</h2>
     <main>
-        <div class="container">
-            <h1>Viva Leve</h1>
-            <h4>Usuário</h4>
-                <input type="text" placeholder="Usuário">
-
-            <h4>Email</h4>
-                <input type="email" placeholder="Email">
-
-            <h4>Senha</h4>
-                <input type="password" placeholder="Senha">
-
-            <button>Cadastrar</button>
+        <div class="imagem">
+            <label>
+                <img src="imagens/shiva.jpg" alt="shiva">
+            </label>
         </div>
+        <div class="cadastro">
+            <h1>Viva leve</h1>
+            <img src="imagens/logo-site.png" alt="" class="flor-red">
+            <div class="input-container">
+                <input type="text" name="name" id="name" class="input-user" required>
+                <label for="name" class="label-input">Nome</label>
+            </div>
+            <div class="input-container">
+                <input type="text" name="email" id="email" class="input-user" required>
+                <label for="email" class="label-input">Email</label>
+            </div>
+            <div class="input-container">
+                <input type="password" name="senha" id="senha" class="input-user" required>
+                <label for="senha" class="label-input">Senha</label>
+            </div>
+            <button class="login">CADASTRAR</button>
+            <div class="linha">
+                <hr>
+                <span>or</span>
+            </div>
+            <button class="button-google">
+                <img src="imagens/icon-google.png" alt="facebook">Cadastrar com Google
+            </button>
+            <button class="button-facebook">
+                <img src="imagens/icon-facebook.png" alt="instagramm">Cadastrar com Facebook
+            </button>
+
+            <div class="fb-gog-cell">
+                <h6>Entrar com</h6>
+                <img src="imagens/icon-facebook.png" alt="facebook" class="icons">
+                <img src="imagens/icon-google.png" alt="google" class="icons">
+            </div>
+        </div>
+
     </main>
+
 </body>
+
 </html>

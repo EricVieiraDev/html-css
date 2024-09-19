@@ -1,106 +1,394 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Playwrite+CU:wght@100..400&display=swap');
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 :root {
-    --cor1:#4A5D23;
-    --cor2:#A4D792;
-    --cor3:#6B8E23;
-    --cor4:#2E2E2E;
-    --cor5:#D3D3D3;
-    --cor6:#888080;
-    --cor7:#2b3615;
+    --cor1:#0A1F20;
+    --cor2:#6A7F83;
+    --cor3:#5E92A9;
+    --cor4:#3b8bad;
 }
 
 body {
-    font-family:"Poppins", sans-serif;;
-    font-weight: normal;
-    background-image: url(imagens/fundo3.jpeg);
-    height: 97vh;
-    background-image: url(imagens/fundo3.jpeg);
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    font-family: 'Poppins' , sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #0A1F20 0%, #6A7F83 50%, #5E92A9 100%);
+    overflow: hidden;
+}
+
+.logo-flor {
+    display: none;
 }
 
 main {
-    background-color: rgba(255, 255, 255, 0.342);
-    border-radius: 15px;
-    width: 30%;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.404);
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: 
+        translate(-50%, -50%);
+    height: 550px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
 }
 
-.container {
-    padding: 20px;
+label > img {
+    width: 650px;
+    height: 550px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.label-input {
+    color: #000000a8;
+}
+
+.cadastro {
+    background-color: white;
+    width: 27em;
     text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.container > h1 {
-    color: var(--cor1);
-    font-weight: bolder;
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+.cadastro > h1 , .flor-red {
+    display: inline-block;
+        vertical-align: middle;
+        font-size: 30pt;
 }
 
-.container > h4 {
-    text-align: left;
-    padding-left: 10px;
-    margin-bottom: 0;
-    font-weight: bolder;
-    color: var(--cor7);
+
+.flor-red {
+    width: 70px;
+    height: 80px;
 }
 
-.container > input {
-    width: 95%;
-    border: 2px solid var(--cor1);
-    border-radius: 10px;
-    padding: 10px;
-    outline: none;
+h1 {
+    font-family: "Parisienne", cursive;
+    margin-top: 14%;
+    margin-bottom: 10%;
+    color: var(--cor4);
+    font-size: 35pt;
 }
 
-.container > button {
-    padding: 10px;
-    margin:30px 0;  
+.input-container {
+    position: relative;
+    display: grid;
+    width: 50%;
+    margin-left: 27%;
+    margin-bottom: 30px;
+}
+
+.input-user {
+    background: none;
     border: none;
-    border-radius: 10px;
+    border-bottom: 1px solid var(--cor4);
+    outline: none;
+    color: rgb(29, 29, 29);
+    font-size: 15px;
+    width: 100%;
+    font-weight: 300;
+}
+
+.label-input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-user:focus ~ .label-input,
+.input-user:valid ~ .label-input{
+    top: -20px;
+    font-size: 12px;
+    color: var(--cor4);
+    font-weight: normal;
+}
+
+button {
+    background-color: var(--cor4);
+    border: none;
     color: white;
-    background: linear-gradient(45deg, var(--cor1) , var(--cor2));
-    width: 95%;
+    padding: 10px 30px;
     font-weight: bolder;
-    font-size: 20px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 14px #ffa07a8a;
+}
+
+.login:hover {
+    background-color: #1a4e64;
     cursor: pointer;
-    transition: 0.3s ease;
 }
 
-.container > button:hover {
-    background: linear-gradient(45deg, #3e4e1c , #6f9760);
+.linha {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
 }
 
-@media screen and (max-width: 760px) {
+.linha hr {
+    border: none;
+    border-top: 1px solid var(--cor4);
+    margin: 50px 100px 0;
+}
+
+.linha span {
+    position: relative;
+    background-color: white;
+    padding: 0 10px;
+    color: #383737;
+    font-size: 16px;
+    top: -10px;
+}
+
+.button-google, .button-facebook {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    padding: 10px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    background-color: #ccc;
+    box-shadow: none;
+    color: var(--cor4);
+}
+
+.button-facebook:hover, .button-google:hover {
+    background-color: #a7a4a4;
+    cursor: pointer;
+}
+
+.button-google > img {
+    margin-right: 17%;
+    width: 15px;
+    height: 15px;
+}
+
+.button-facebook > img {
+    margin-right: 17%;
+    width: 15px;
+    height: 15px;
+}
+
+.fb-gog-cell {
+    display: none;
+}
+
+h2 {
+    display: none;
+}
+
+@media (max-width: 450px) {
+    body {
+        background-image: url('imagens/shiva.jpg');
+        background-position: center center;
+        background-size: cover;
+    }
+
+    h2 {
+        display: grid;
+        color: #ffffff;
+        text-align: center;
+        font-size: 22pt;
+        font-weight: 700;
+        opacity:0.7;
+    }
+
+    label > img {
+        display: none;
+    }
+
+    main {
+        height: 54%;
+        margin-top: 15%;
+    }
+
+    .cadastro {
+        width: 300px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.384);
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .label-input {
+        margin-left: -20px;
+    }
+
+    .input-user {
+        width: 180px;
+        margin-left: -20px;
+    }
+
+    .cadastro > h1 {
+        margin-top: 15%;
+        margin-right: 10px;
+    }
+
+    .cadastro > h1 , .flor-red {
+        display: inline-block;
+            vertical-align: middle;
+            font-size: 30pt;
+    }
+
+    .linha {
+        display: none;
+    }
+
+    .button-google, .button-facebook {
+        display: none;
+    }
+
+    #senha {
+        margin-bottom: 2%;
+    }
+
+    .fb-gog-cell {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    h6 {
+        color: rgba(0, 0, 0, 0.562);
+        font-size: 9pt;
+        margin: 0 3px 0 58%;
+        font-weight: normal;
+    }
+
+    .icons {
+        margin-right: 5px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .logo-flor {
+        display: flex;   
+        position: relative;   
+        width: 100px; 
+        height: 100px;
+        margin-left: 39.5%;
+        margin-top: 5%;
+        opacity:0.7;
+    }
+
+    .flor-red {
+        width: 60px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
     
     body {
-        overflow: hidden;
+        background-image: url('imagens/shiva.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
     
-    main {
-        width: 90%;
+    .imagem {
+        display: none;
     }
-}
 
-@media screen and (max-width: 768px), screen and (max-width:884px) {
-    
-    body {
-        overflow: hidden;
+    .cadastro {
+        width: 600px;
+        height: 70vh;
+        margin-top: 0;
     }
-    
-    main {
-        width: 90%;
-    }
-}
 
+    .logo-flor, h2 {
+        display: grid;
+        color: #ffffff;
+        text-align: center;
+        font-size: 22pt;
+        font-weight: 700;
+        opacity:0.7;
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+
+    .flor {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo-flor {
+        justify-content: center;
+        display: flex;
+        position: relative;   
+        width: 100px; 
+        height: 100px;
+        margin-top: 2%;
+        opacity:0.7;
+    }
+
+    .cadastro > h1 , .flor-red {
+        display: inline-block;
+            vertical-align: middle;
+            font-size: 30pt;
+    }
+
+    .cadastro > h1 {
+        font-size: 50pt;
+        margin-top: 14%;
+        margin-right: 10px;
+    }
+    
+    .flor-red {
+        width: 115px;
+        height: 125px;
+    }
+
+    .label-input {
+        margin-left: -20px;
+        font-size: 16px;
+        top: 0px;
+        left: 0px;
+    }
+
+    .input-user {
+        width: 23em;
+        margin-left: -20px;
+    }
+
+    .login {
+        width: 30%;
+        padding: 15px 0;
+        font-weight: bolder;
+        font-size: 12pt;
+    }
+
+    .button-facebook, .button-google {
+        font-size: 15px;
+    }
+
+    .button-google > img {
+        margin-right: 22%;
+        width: 15px;
+        height: 15px;
+    }
+    
+    .button-facebook > img {
+        margin-right: 22%;
+        width: 15px;
+        height: 15px;
+    }
+
+}
