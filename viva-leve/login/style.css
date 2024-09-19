@@ -8,14 +8,17 @@
 }
 
 :root {
-    --cor1:#840611;
+    --cor1:#0A1F20;
+    --cor2:#6A7F83;
+    --cor3:#5E92A9;
+    --cor4:#3b8bad;
 }
 
 body {
     margin: 0;
     font-family: 'Poppins' , sans-serif;
     height: 100vh;
-    background: linear-gradient(to right, #F8BBD0, #F48FB1);
+    background: linear-gradient(135deg, #0A1F20 0%, #6A7F83 50%, #5E92A9 100%);
     overflow: hidden;
 }
 
@@ -70,7 +73,7 @@ h1 {
     font-family: "Parisienne", cursive;
     margin-top: 14%;
     margin-bottom: 10%;
-    color: var(--cor1);
+    color: var(--cor4);
     font-size: 35pt;
 }
 
@@ -85,7 +88,7 @@ h1 {
 .input-user {
     background: none;
     border: none;
-    border-bottom: 1px solid var(--cor1);
+    border-bottom: 1px solid var(--cor4);
     outline: none;
     color: rgb(29, 29, 29);
     font-size: 15px;
@@ -105,12 +108,12 @@ h1 {
 .input-user:valid ~ .label-input{
     top: -20px;
     font-size: 12px;
-    color: var(--cor1);
+    color: var(--cor4);
     font-weight: 500;
 }
 
 button {
-    background-color: var(--cor1);
+    background-color: var(--cor4);
     border: none;
     color: white;
     padding: 10px 30px;
@@ -120,7 +123,7 @@ button {
 }
 
 .login:hover {
-    background-color: #57080f;
+    background-color: #1a4e64;
     cursor: pointer;
 }
 
@@ -132,7 +135,7 @@ button {
 
 .linha hr {
     border: none;
-    border-top: 1px solid var(--cor1);
+    border-top: 1px solid var(--cor4);
     margin: 50px 100px 0;
 }
 
@@ -154,7 +157,7 @@ button {
     margin-bottom: 20px;
     background-color: #ccc;
     box-shadow: none;
-    color: var(--cor1);
+    color: var(--cor4);
 }
 
 .button-facebook:hover, .button-google:hover {
@@ -184,7 +187,7 @@ h2 {
 
 @media (max-width: 450px) {
     body {
-        background-image: url('imagens/flor-lotus.jpg');
+        background-image: url('imagens/shiva.jpg');
         background-position: center center;
         background-size: cover;
     }
@@ -211,6 +214,7 @@ h2 {
         width: 300px;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.384);
         border-radius: 10px;
+        background-color: rgb(255, 255, 255);
     }
 
     .label-input {
@@ -287,7 +291,7 @@ h2 {
     }
     
     body {
-        background-image: url('imagens/flor-lotus.jpg');
+        background-image: url('imagens/shiva.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

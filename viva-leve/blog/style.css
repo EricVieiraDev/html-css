@@ -7,6 +7,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --cor1:#0A1F20;
+  --cor2:#6A7F83;
+  --cor3:#5E92A9;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -152,10 +158,21 @@ nav ul li a:hover{
   color: rgba(0, 0, 0, 0.815);
 }
 
-.ashtanga > img {
-  margin-top: 6%;
+.imagens-pilares > a > img {
+  margin-top: 70px;
   width: 520px;
   height: 470px;
+}
+
+.imagens-pilares > a {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 13px;
+  color: black;
+}
+
+.imagens-pilares > a > p {
+  color: black;
 }
 
 .yoga-ocidente {
@@ -174,7 +191,7 @@ nav ul li a:hover{
   color: rgba(0, 0, 0, 0.664);
 }
 
-h3 {
+#tipoYoga {
   margin-bottom: 30px;
   color: rgba(0, 0, 0, 0.815);
 }
@@ -183,7 +200,7 @@ h3 {
   display: flex;
   justify-content: center;
   gap: 25%;
-  background-color: #a4b2b341;
+  background-color: #5e93a950;
   padding: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
 }

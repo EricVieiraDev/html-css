@@ -276,7 +276,7 @@ button:hover {
 footer {
     margin-top: 10%;
     height: 30vh;
-    background: linear-gradient(to right ,#A0522D, #D2B48C, #e9cfa0);
+    background: linear-gradient(135deg, #0A1F20 0%, #6A7F83 50%, #5E92A9 100%);
 }
 
 .rodape {
@@ -313,6 +313,11 @@ footer>p {
 
 .img-tablet {
     display: none;
+}
+
+#icons8 {
+    margin-top: 5px;
+    color: #cfcccc;
 }
 
 @media (max-width: 450px) {
