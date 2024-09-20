@@ -173,9 +173,13 @@ footer>p {
         display: block;
     }
 
+    .img-pilares {
+        margin-left: 0;
+    }
+
     .imagens-pilares > a > img {
-        margin: 10px 0 0 9%;
-        width: 300px;
+        margin-left: 5%;
+        width: 350px;
         height: 300px;
     }
 
@@ -184,12 +188,19 @@ footer>p {
     }
 
     .tipos-yoga {
+        padding-right: 0;
+        margin-right: 0;
         display: block;
     }
 
     .tipos-yoga > p {
-        width: 335px;
+        width: 350px;
         margin-bottom: 5px;
+        padding-right: 0;
+    }
+
+    .tipos-yoga > img {
+        width: 350px;
     }
 
     .vantagem {
@@ -205,7 +216,7 @@ footer>p {
     }
 }
 
-@media (max-width: 834px) {
+@media (min-width: 768px) and (max-width: 1024px){
     header {
         margin: 0 25px 10%;
         padding: 20px 0 0 0 ;
@@ -219,15 +230,19 @@ footer>p {
     }
 
     .container {
-        gap: 30px;
+        gap: 5px;
         margin-top: 5px;
     }
 
     .container > img {
-        width: 350px;
+        width: 290px;
         height: auto;
         margin-top: 4%;
         margin-right: 10px;
+    }
+
+    .principal {
+        margin: 20px;
     }
 
     .principal>h1{
@@ -268,11 +283,23 @@ footer>p {
         height: 300px;
     }
 
+    .bene-resp > h4 {
+        font-size: 11pt;
+    }
+
+    .bene-resp > p {
+        font-size: 8pt;
+    }
+
     .vantagem {
         display: grid;
         grid-template-columns: 350px 350px;
         grid-template-rows: 300px 300px;
         justify-content: center;
         gap: 20px 20px;
+    }
+
+    .rodape > label > img {
+        margin-top: 45%;
     }
 }
