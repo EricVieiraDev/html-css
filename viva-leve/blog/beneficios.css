@@ -135,3 +135,144 @@ footer>p {
     margin-top: 5px;
     color: #cfcccc;
 }
+
+@media (max-width: 450px) {
+    header {
+        margin-left: 0;
+        padding: 0;
+    }
+    .logo {
+        margin-left: 0;
+    }
+
+    nav > ul {
+        gap: 1px;
+    }
+
+    #img-pri {
+        display: none;
+    }
+
+    main {
+        margin: 0 5% 20px;
+    }
+
+    .principal>h1{
+        font-size: 30pt;
+    }
+
+    #segundo-p {
+        display: none;
+    }
+
+    .principal>p{
+        width: 350px;
+    }
+
+    .ashtanga {
+        display: block;
+    }
+
+    .imagens-pilares > a > img {
+        margin: 10px 0 0 9%;
+        width: 300px;
+        height: 300px;
+    }
+
+    .imagens-pilares > a {
+        font-size: 8pt;
+    }
+
+    .tipos-yoga {
+        display: block;
+    }
+
+    .tipos-yoga > p {
+        width: 335px;
+        margin-bottom: 5px;
+    }
+
+    .vantagem {
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 300px 300px 300px 300px;
+        justify-content: center;
+        gap: 20px 0;
+    }
+
+    .tecnicas > ul {
+        margin-left: 21px;
+    }
+}
+
+@media (max-width: 834px) {
+    header {
+        margin: 0 25px 10%;
+        padding: 20px 0 0 0 ;
+    }
+    .logo {
+        margin-left: 0;
+    }
+
+    nav > ul {
+        gap: 10px;
+    }
+
+    .container {
+        gap: 30px;
+        margin-top: 5px;
+    }
+
+    .container > img {
+        width: 350px;
+        height: auto;
+        margin-top: 4%;
+        margin-right: 10px;
+    }
+
+    .principal>h1{
+        font-size: 30pt;
+        margin-top: 0;
+    }
+
+    .principal>p{
+        width: 400px;
+        margin-left: 10px;
+        font-size: 10pt;
+    }
+
+    .ashtanga {
+        display: block;
+    }
+
+    .imagens-pilares > a > img {
+        margin: 10px 0 0 25%;
+        width: 350px;
+        height: 300px;
+    }
+
+    .tipos-yoga {
+        width: 600px;
+        height: 390px;
+        gap: 5%;
+    }
+
+    .tipos-yoga > p {
+        width: 300px;
+        margin-top: 0;
+        font-size: 10pt;
+    }
+
+    .tipos-yoga > img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .vantagem {
+        display: grid;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: 300px 300px;
+        justify-content: center;
+        gap: 20px 20px;
+    }
+}

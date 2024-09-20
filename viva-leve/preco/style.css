@@ -15,6 +15,44 @@ body {
     background-color: white;
 }
 
+#menu {
+    margin: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10xp 20px;
+    color: rgba (255, 255, 255, 0.750);
+}
+
+.logo {
+    color:hsla(0, 0%, 100%, 0.750);
+    font-weight: bolder;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 40px;
+    font-weight: bolder;
+}
+
+nav>ul>li>a {
+    color: hsla(0, 0%, 100%, 0.750);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav > ul > li {
+    transition: background-color 0.3s ease;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+nav>ul>li:hover {
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
 .container {
     margin-top: 0;
     display: flex;
@@ -33,7 +71,7 @@ body {
     font-family: "Playfair Display", serif;
     text-align: center;
     margin-top: 0;
-    padding-top: 6%;
+    padding-top: 3%;
     margin-bottom: 0;
     color: white;
     font-size: 45px;
@@ -105,21 +143,42 @@ body {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.397);
 }
 
-header {
+.pri-plano {
     background-color: #FFDAB9;
     padding: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-header>h1 {
+.pri-plano>h1 {
     color: white;
     text-align: center;
     margin-bottom: 0;
     font-size: 40px;
 }
 
-header>p {
+.pri-plano>p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.seg-plano {
+    background-color: #FFDAB9;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.seg-plano>h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.seg-plano>p {
     color: white;
     text-align: center;
     font-size: 15px;
@@ -321,8 +380,13 @@ footer>p {
 }
 
 @media (max-width: 450px) {
+    nav > ul {
+        margin: 10px 0;
+        gap: 10px;
+    }
+    
     #titulo {
-        padding-top: 22.5%;
+        padding-top: 10%;
     }
 
     .imagem {
