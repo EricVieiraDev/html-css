@@ -1,70 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsividade.css">
 </head>
+
 <body>
-    <div class="container-header">
-        <header>
-          <div class="logo">Viva Leve</div>
-          <nav>
+    <header>
+        <h3>Viva Leve</h3>
+        <nav>
             <ul>
-              <li><a href="../index.html">Início</a></li>
-              <li><a href="../preco/index.html">Preços</a></li>
-              <li><a href="../contato/index.html">Contatos</a></li>
-              <li><a href="../contato/index.html">Sobre</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
             </ul>
-          </nav>
-        </header>
-    <div class="C6NE2">
-        <div class="container">
-            <main>
-                <div class="titulo">
-                    <h1>Entre</h1> <h1 class="cor-clara">em contato</h1>
-                </div>
-                <hr>
-                <p>ericdesousa560@gmail.com</p>
-                <p>WhatsApp: +55 61 98554-0963</p>
-                <div class="titulo">
-                    <h1>Redes</h1> <h1 class="cor-clara">Sociais</h1>
-                </div>
-                <hr>
-                <div id="redes-sociais">
-                    <img src="imagens/facebook.png" alt="facebook">
-                    <img src="imagens/instagram.png" alt="instagram">
-                    <img src="imagens/twitter.png" alt="twitter">
-                </div>
-                <br>
-                <label id="dados">
-                    <input type="text" name="nome" placeholder="Nome">
-                    <input type="email" name="email" placeholder="Email">
-                </label>
-                <label id="sobre">
-                    <input type="tel" name="telefone" placeholder="Telefone"><br>
-                    <input type="text" name="assunto" placeholder="Assunto"><br>
-                    <input type="text" name="mensagem" placeholder="Mensagem" id="mensagem">
-                </label>
-                <label id="botao"><button>ENVIAR</button></label>
-            </main>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Entre em contato</h1>
+        <hr>
+        <p>ericdesousa560@gmail.com</p>
+        <p>WhatsApp: +55 (61) 98554-0963</p>
+        <h1>Redes Sociais</h1>
+        <hr>
+        <div class="imagens">
+            <img src="imagens/facebook.png" alt="facebook">
+            <img src="imagens/instagram.png" alt="instagram">
+            <img src="imagens/twitter.png" alt="twitter">
         </div>
+        <div class="input-container">
+            <input type="text" name="nome" class="inputUser" placeholder="Nome">
+            <input type="text" name="email" class="inputUser" placeholder="Email">
+        </div>
+            <div class="input-assunto">
+                <div><input type="tel" name="telefone" placeholder="Telefone" class="inputSobre"></div>
+                <div><input type="text" name="assunto" placeholder="Assunto" class="inputSobre"></div>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="50" placeholder="Digite sua dúvida aqui..."></textarea>
+            </div>
+        <div class="botao"><button>Enviar</button></div>
     </div>
-    <footer>
-        <div class="rodape">
-            <label>
-                <img src="imagens/icon-instagram.png" alt="instagram">
-                <img src="imagens/icon-facebook.png" alt="facebook">
-                <img src="imagens/icon-twitter.png" alt="twitter">
-            </label>
-        </div>
-    
-        <p>Info • Suporte • Marketing</p>
-        <p id="p-rodape">Terms of Use • Privacy Policy</p>
-        <p id="eric">@Criado por Eric Vieira</p>
-        <p id="icons8">Icons8</p>
-    </footer>
+
 </body>
+
 </html>
