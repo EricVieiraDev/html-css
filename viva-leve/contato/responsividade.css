@@ -1,0 +1,27 @@
+@media (max-width: 450px) {
+    header {
+        margin: 0 10px;
+    }
+
+    nav > ul {
+        gap: 10px;
+    }
+
+    nav > ul > li > a , h3 {
+        font-size: 11pt;
+    }
+
+    main {
+        width: 90%;
+        margin-left: 17px;
+    }
+
+    .container > .titulo {
+        font-size: 10pt;
+    }
+
+    .imagens > img {
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -5,15 +5,16 @@
 }
 
 :root {
-    --cor1:#0A1F20;
+    --cor1:#17484b;
     --cor2:#6A7F83;
     --cor3:#5E92A9;
-    --cor4:#3b8bad;
+    --cor4:#3da3cf;
 }
 
 body {
-    background-color: lightblue;
+    background-color: var(--cor3);
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;   
 }
 
 header {
@@ -24,7 +25,7 @@ header {
 }
 
 header > h3 {
-    color: white;
+    color: rgba(255, 255, 255, 0.603);
 }
 
 nav > ul {
@@ -33,31 +34,59 @@ nav > ul {
     gap: 40px;
 }
 
+nav > ul > li {
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav > ul > li:hover {
+    background-color: rgba(0, 0, 0, 0.137);
+    cursor: pointer;
+}
+
 nav > ul > li > a {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.603);
+    font-weight: bolder;
+}
+
+nav > ul > li > a:hover {
+    color: rgba(255, 255, 255, 0.822);
+}
+
+main {
+    display: grid;
+    place-items: center;
 }
 
 .container{
     background-color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: 
-        translate(-50%, -50%);
     padding: 20px;
-    margin-top: 7%;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.384);
 }
 
-.container > h1 {
-    text-align: center;
-    margin: 20px 0 0 0;
+.titulo {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-transform: uppercase;
+}
+
+.titulo > h1 {
+    color: var(--cor1);
+}
+
+.titulo > .cor-h1 {
+    color: var(--cor4);
 }
 
 hr {
     width: 100px;
     margin: 20px auto;
-    background-color: red;
+    border: 1.8px solid var(--cor3);
 }
 
 .container > p {
@@ -68,11 +97,12 @@ hr {
 .imagens {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .imagens > img {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
 }
 
 .input-container {
@@ -86,6 +116,7 @@ hr {
     margin: 10px 0;
     outline: none;
     width: 100%;
+    padding: 5px 0;
 }
 
 .input-assunto {
@@ -97,6 +128,7 @@ hr {
     width: 100%;
     border: 1px solid black;
     outline: none;
+    padding: 5px 0;
 }
 
 #mensagem {
@@ -114,13 +146,62 @@ hr {
 .botao > button {
     margin: 10px 0 0 0;
     border: none;
-    background-color: lightblue;
-    padding: 6px 25px;
+    background-color: var(--cor3);
+    padding: 10px 25px;
     border-radius: 6px;
     color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 
 .botao > button:hover {
-    background-color: rgb(79, 135, 153);
+    background-color: rgb(53, 101, 117);
     cursor: pointer;
+}
+
+footer {
+    margin-top: 5%;
+    height: 30vh;
+    background: linear-gradient(135deg, #0A1F20 0%, #6A7F83 50%, #5E92A9 100%);
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape>label>img {
+    padding-top: 40%;
+}
+
+footer>p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 0px;
+    color: white;
+}
+
+#p-rodape {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#eric {
+    margin-top: 5px;
+    color: #cfcccc;
+}
+
+.img-celular {
+    display: none;
+}
+
+.img-tablet {
+    display: none;
+}
+
+#icons8 {
+    margin-top: 5px;
+    color: #cfcccc;
 }

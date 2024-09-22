@@ -190,6 +190,7 @@ h2 {
         background-image: url('imagens/shiva.jpg');
         background-position: center center;
         background-size: cover;
+        background-repeat: no-repeat;
     }
 
     h2 {
